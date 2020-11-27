@@ -17,9 +17,8 @@ lazy val `sbt-openapi-generator` = (project in file("."))
     sbtPlugin := true,
     publishMavenStyle := false,
     bintrayRepository := "sbt-plugins",
-    bintrayOrganization := Option("openapitools"),
     bintrayPackageLabels := Seq("sbt", "plugin", "oas", "openapi", "openapi-generator"),
-    bintrayVcsUrl := Some("git@github.com:OpenAPITools/sbt-openapi-generator.git"),
+    bintrayVcsUrl := Some("git@github.com:jrouly/sbt-openapi-generator.git"),
     git.baseVersion := openApiGeneratorVersion.replace("-SNAPSHOT", ""),
     git.formattedShaVersion := {
       if(isSnapshot.value) {
