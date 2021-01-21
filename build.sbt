@@ -9,9 +9,9 @@ specifications as part of your build. Other tasks are available as command line 
 
 lazy val `sbt-openapi-generator` = (project in file("."))
   .settings(
-    scalaVersion := "2.12.10",
+    scalaVersion := "2.12.13",
     crossScalaVersions := Seq(scalaVersion.value, "2.11.12"),
-    crossSbtVersions := List("0.13.17", "1.3.10"),
+    crossSbtVersions := List("0.13.18", "1.3.13"),
     sbtPlugin := true,
 
     publishMavenStyle := false,
@@ -54,5 +54,5 @@ lazy val `sbt-openapi-generator` = (project in file("."))
         devConnection = "scm:git:ssh://git@github.com:OpenAPITools/openapi-generator.git")
     ),
 
-    libraryDependencies += "org.openapitools" % "openapi-generator" % "5.0.0-beta2"
+    libraryDependencies += "org.openapitools" % "openapi-generator" % "5.0.0"
   ).enablePlugins(SbtPlugin)
