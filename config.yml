@@ -1,0 +1,5 @@
+generatorName: "java-play-framework"
+outputDir : "generated"
+additionalProperties:
+  hideGenerationTimestamp: "true"
+  booleanGetterPrefix: "is"
