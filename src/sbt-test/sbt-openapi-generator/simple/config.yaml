@@ -1,5 +1,0 @@
-apiPackage: "org.openapitools.client.custom.api"
-generatorName: "scala-akka"
-outputDir : "generated"
-additionalProperties:
-  dateLibrary: "joda"
